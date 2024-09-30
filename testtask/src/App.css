@@ -1,46 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.container{
+.container {
   border: 2px solid black;
   background-color: #E2E2E2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.title{
+
+.title {
   display: flex;
   justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.balance-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F0F0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.AddButton {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 20px;
+  user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  border: 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AddButton:hover {
+  background-color: #4848C0;
+  box-shadow: #4848C0 0 10px 20px -10px;
+}
+
+.web3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .balance-display {
+    font-size: 20px;
+  }
 }
